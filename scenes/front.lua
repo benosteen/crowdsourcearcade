@@ -9,6 +9,10 @@ function frontScene.keypressed( key, unicode )
     -- start audio test scene
     scenes.setCurrent(game_structure["audiotest"])
     frontScene.pause()
+  elseif key == "s" then
+    -- start shader scene
+    scenes.setCurrent(game_structure["shadertest"])
+    frontScene.pause()
   elseif key == "escape" then
     love.event.quit(0)
   end

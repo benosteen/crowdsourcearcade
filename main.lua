@@ -5,15 +5,17 @@ function love.load()
   
   -- fonts
   
-  smfont = love.graphics.newFont("font/ARCADECLASSIC.ttf", 26)
-  regularfont = love.graphics.newFont("font/ARCADECLASSIC.ttf", 32)
-  lrgfont = love.graphics.newFont("font/ARCADECLASSIC.ttf", 40)
+  smfont = love.graphics.newFont("font/arcadeclassic.ttf", 26)
+  regularfont = love.graphics.newFont("font/arcadeclassic.ttf", 32)
+  lrgfont = love.graphics.newFont("font/arcadeclassic.ttf", 40)
   
   audiotest_scene = scenes.create("audiotest")
   front_scene = scenes.create("front")
+  shader_scene = scenes.create("shadertest")
   
   game_structure = {audiotest = audiotest_scene.id,
-                    front = front_scene.id}
+                    front = front_scene.id,
+                    shadertest = shader_scene.id}
     
   scenes.setCurrent(front_scene.id)
 end

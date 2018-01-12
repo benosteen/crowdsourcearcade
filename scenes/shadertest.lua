@@ -16,7 +16,7 @@ function shaderTestScene.load()
 			return pixel;	
 		}
 	]]
-  pic = love.graphics.newImage("test.png")
+  pic = love.graphics.newImage("scenes/test.png")
   time = 0;
 end
 
