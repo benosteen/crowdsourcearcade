@@ -9,6 +9,7 @@ local id = 1
 function scenes:setup()
   sceneregister["audiotest"] = scenes.findscene("audiotest")
   sceneregister["front"] = scenes.findscene("front")
+  sceneregister["shadertest"] = scenes.findscene("shadertest")
 end
 
 function scenes.findscene(scenename)
